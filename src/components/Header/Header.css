@@ -1,0 +1,54 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+header.black {
+    background-color: #141414;
+}
+
+.search--box, .search--button {
+    background-color: transparent;
+    height: 30px;
+    border-color: transparent;
+    color: #fff
+}
+.header--logo {
+    height: 30px;
+    display: flex;
+    gap: 30px;
+}
+.header--logo .linkPage{
+    /* color: rgb(19, 124, 59); */
+    font-size: 20px;
+
+}
+.linkPage span a{
+     padding: 20px;
+    font-weight: 600;
+    color: #adbdd1e3;
+    text-decoration: none;
+    
+}
+.active{
+    color:white !important;
+}
+.header--logo img {
+    height: 25px;
+}
+.header--user img {
+    height: 100%;
+    border-radius: 3px;
+}
+.header--user {
+    height: 35px;
+}

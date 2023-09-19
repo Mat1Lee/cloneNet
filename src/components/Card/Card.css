@@ -1,0 +1,10 @@
+.card-text{
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  background: #171616f2;
+  height: 50px;
+}

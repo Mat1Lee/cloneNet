@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+h2,p{
+  color: white;
+}
+body {
+  background-color: #111;
+  color: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.page{
+  background-color: #171616;
+  overflow-y: hidden ;
+}
+.lists {
+  margin-top: -150px;
+  background-color: #171616;
+}
+footer {
+  margin: 50px 0;
+  text-align: center;
+}
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movieRow {
+  margin-bottom: 30px;
+}
+.movieRow h2 {
+  margin: 0px 0px 0px 30px;
+}
+.movieRow--listarea {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+.movieRow--list {
+  width: 99999999px;
+  transition: all ease 0.5s;
+}
+.movieRow--item {
+  display: inline-block;
+  width: 250px;
+ 
+  cursor: pointer;
+}
+.movieRow--item img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2s;
+}
+.movieRow--item img:hover {
+  transform: scale(1);
+}
+.movieRow--left,
+.movieRow--right {
+  position: absolute;
+  width: 50px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 5px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.movieRow--left {
+  left: 0;
+}
+.movieRow--right {
+  right: 0;
+}
+.movieRow:hover .movieRow--left, 
+.movieRow:hover .movieRow--right{
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .movieRow--left,
+  .movieRow--right {
+      opacity: 1;
+  }
+}
